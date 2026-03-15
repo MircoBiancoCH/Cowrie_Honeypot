@@ -9,7 +9,7 @@ ________________________________________________________________________________
 Architektur & Sicherheitskonzept:
 Um den Host-Server zu schützen, wurde ein zweistufiges Sicherheitskonzept angewendet:
 
-Versteckter Host-Zugang: Der echte SSH-Dienst des Servers wurde auf einen unauffälligen High-Port (55522) verlegt.
+Versteckter Host-Zugang: Der echte SSH-Dienst des Servers wurde auf einen unauffälligen High-Port (z.B. 55555) verlegt.
 
 Isolierte Falle: Der Honeypot läuft in einem abgeriegelten Docker-Container. Eingehender Traffic auf den Standard-Ports (22, 23) wird über iptables unsichtbar an den Container weitergeleitet.
 _______________________________________________________________________________________________________________________________________________
